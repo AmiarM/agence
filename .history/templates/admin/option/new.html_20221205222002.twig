@@ -1,0 +1,17 @@
+{% extends 'baseAdmin.html.twig' %}
+
+{% block title %}New Option{% endblock %}
+
+{% block contentAdmin %}
+    <div class="container" style="padding-top: 150px;">
+        <div class="row">
+            <h1>Create new Option</h1>
+        </div>
+        <div class="row">
+            <div class="col-md-12" style="float: left;">
+                {{ include('admin/option/_form.html.twig') }}  
+                <a class="btn btn-success" href="{{ path('app_admin_option_index') }}"><i class="fa fa-rotate-left"></i></a>
+            </div>
+        </div>
+    </div>
+{% endblock %}

@@ -1,0 +1,18 @@
+{% extends 'baseAdmin.html.twig' %}
+
+{% block title %}Edit Option{% endblock %}
+
+{% block contentAdmin %}
+<div class="container" style="margin-top: 150px;margin-left: 150px;">
+    <div class="row">
+        <div class="col-md-12">
+            <h1>Edit Option</h1>
+        </div>
+    </div>
+    <div class="row">
+        {{ include('admin/option/_form.html.twig', {'button_label': 'Update'}) }}
+        <a class="btn btn-success" href="{{ path('app_admin_option_index') }}"><i class="fa fa-rotate-left"></i></a>
+        {{ include('admin/option/_delete_form.html.twig') }}
+    </div>
+</div>
+{% endblock %}
